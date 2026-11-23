@@ -1,4 +1,3 @@
-
 export default function decorate(block) {
   const slides = [...block.children];
 
@@ -35,8 +34,7 @@ export default function decorate(block) {
       slide.hidden = i !== currentIndex;
     });
 
-    status.textContent =
-      `${currentIndex + 1} / ${slides.length}`;
+    status.textContent = `${currentIndex + 1} / ${slides.length}`;
   }
 
   previous.addEventListener('click', () => {
