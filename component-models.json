@@ -161,6 +161,42 @@
     ]
   },
   {
+    "id": "carousel-slide",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Slide Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Image Alt Text"
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Slide Title"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "label": "Slide Description"
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Button Link"
+      },
+      {
+        "component": "text",
+        "name": "linkText",
+        "label": "Button Text"
+      }
+    ]
+  },
+  {
     "id": "columns",
     "fields": [
       {
