@@ -2,9 +2,8 @@
   {
     "id": "main",
     "components": [
-      "section",
-      "carousel"
-    ]
+      "section"
+          ]
   },
   {
     "...": "./_section.json#/filters"

@@ -1,6 +1,6 @@
 export default function decorate(block) {
   const slides = [...block.children];
-
+console.log(slides)
   if (!slides.length) return;
 
   slides.forEach((slide, index) => {

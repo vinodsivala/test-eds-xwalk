@@ -165,48 +165,42 @@
     "fields": [],
     "container": true
   },
-{
-  "id": "carousel-slide",
-  "fields": [
-    {
-      "component": "reference",
-      "valueType": "string",
-      "name": "image",
-      "label": "Slide Image",
-      "multi": false
-    },
-    {
-      "component": "text",
-      "valueType": "string",
-      "name": "imageAlt",
-      "label": "Image Alt Text"
-    },
-    {
-      "component": "text",
-      "valueType": "string",
-      "name": "content_title",
-      "label": "Slide Title"
-    },
-    {
-      "component": "richtext",
-      "valueType": "string",
-      "name": "content_text",
-      "label": "Slide Description"
-    },
-    {
-      "component": "aem-content",
-      "valueType": "string",
-      "name": "content_link",
-      "label": "Button Link"
-    },
-    {
-      "component": "text",
-      "valueType": "string",
-      "name": "content_linkText",
-      "label": "Button Text"
-    }
-  ]
-},
+  {
+    "id": "carousel-slide",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Slide Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Image Alt Text"
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Slide Title"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "label": "Slide Description"
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Button Link"
+      },
+      {
+        "component": "text",
+        "name": "linkText",
+        "label": "Button Text"
+      }
+    ]
+  },
   {
     "id": "columns",
     "fields": [

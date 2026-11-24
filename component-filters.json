@@ -2,8 +2,7 @@
   {
     "id": "main",
     "components": [
-      "section",
-      "carousel"
+      "section"
     ]
   },
   {
@@ -16,7 +15,8 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "carousel"
     ]
   },
   {
