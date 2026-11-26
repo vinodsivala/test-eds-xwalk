@@ -1,0 +1,172 @@
+
+/* Main language selector */
+.language-selector {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  z-index: 1000;
+}
+
+/* Top language button */
+.language-selector-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Selected country flag */
+.selected-flag {
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* Selected language */
+.selected-language {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* Dropdown arrow */
+.language-arrow {
+  font-size: 22px;
+  line-height: 1;
+}
+
+/* Dropdown */
+.language-dropdown {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  width: 540px;
+  max-width: min(90vw, 540px);
+  background: #202020;
+  color: #fff;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 25%);
+  z-index: 1001;
+}
+
+/* Ensure hidden works */
+.language-dropdown[hidden] {
+  display: none !important;
+}
+
+/* Country row */
+.language-country {
+  display: flex;
+  align-items: center;
+  min-height: 88px;
+  padding: 16px 20px;
+  border-bottom: 1px solid #555;
+  box-sizing: border-box;
+}
+
+/* Country header */
+.language-country-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Country flag */
+.country-flag {
+  font-size: 30px;
+  min-width: 34px;
+  line-height: 1;
+}
+
+/* Country details */
+.country-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Country name */
+.country-name {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ddd;
+}
+
+/* Language list */
+.country-languages {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
+}
+
+/* Individual language */
+.language-option {
+  background: transparent;
+  color: #fff;
+  border: none;
+  border-right: 1px solid #999;
+  padding: 0 10px;
+  font-size: 17px;
+  cursor: pointer;
+  line-height: 1.2;
+}
+
+/* Remove first button left padding */
+.language-option:first-child {
+  padding-left: 0;
+}
+
+/* Remove last button border */
+.language-option:last-child {
+  border-right: none;
+}
+
+/* Hover */
+.language-option:hover {
+  text-decoration: underline;
+}
+
+/* Selected language */
+.language-option[aria-pressed="true"] {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 600;
+}
+
+/* Keyboard focus */
+.language-selector button:focus-visible {
+  outline: 2px solid #ffe500;
+  outline-offset: 3px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .language-dropdown {
+    width: 350px;
+    max-width: 90vw;
+  }
+
+  .language-country {
+    min-height: 75px;
+    padding: 12px;
+  }
+
+  .language-option {
+    font-size: 14px;
+    padding: 0 7px;
+  }
+
+  .country-name {
+    font-size: 12px;
+  }
+
+  .selected-language {
+    font-size: 14px;
+  }
+}
