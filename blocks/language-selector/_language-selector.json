@@ -11,29 +11,7 @@
             "template": {
               "name": "Language Selector",
               "model": "language-selector",
-              "defaultFlag": "🇺🇸",
-              "defaultLanguage": "EN-US",
-              "country1": "United States",
-              "flag1": "🇺🇸",
-              "languages1": "EN-US, ES-US",
-              "country2": "Canada",
-              "flag2": "🇨🇦",
-              "languages2": "EN-CA, FR-CA",
-              "country3": "Switzerland",
-              "flag3": "🇨🇭",
-              "languages3": "DE-CH, FR-CH, IT-CH",
-              "country4": "Germany",
-              "flag4": "🇩🇪",
-              "languages4": "DE-DE",
-              "country5": "France",
-              "flag5": "🇫🇷",
-              "languages5": "FR-FR",
-              "country6": "Spain",
-              "flag6": "🇪🇸",
-              "languages6": "ES-ES",
-              "country7": "Italy",
-              "flag7": "🇮🇹",
-              "languages7": "IT-IT"
+              "filter": "language-selector"
             }
           }
         }
@@ -43,147 +21,17 @@
   "models": [
     {
       "id": "language-selector",
-      "fields": [
-        {
-          "component": "text",
-          "name": "defaultFlag",
-          "label": "Default Country Flag",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "defaultLanguage",
-          "label": "Default Language Code",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "country1",
-          "label": "Country 1",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "flag1",
-          "label": "Country 1 Flag",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "languages1",
-          "label": "Country 1 Languages (comma separated)",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "country2",
-          "label": "Country 2",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "flag2",
-          "label": "Country 2 Flag",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "languages2",
-          "label": "Country 2 Languages (comma separated)",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "country3",
-          "label": "Country 3",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "flag3",
-          "label": "Country 3 Flag",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "languages3",
-          "label": "Country 3 Languages (comma separated)",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "country4",
-          "label": "Country 4",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "flag4",
-          "label": "Country 4 Flag",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "languages4",
-          "label": "Country 4 Languages (comma separated)",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "country5",
-          "label": "Country 5",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "flag5",
-          "label": "Country 5 Flag",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "languages5",
-          "label": "Country 5 Languages (comma separated)",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "country6",
-          "label": "Country 6",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "flag6",
-          "label": "Country 6 Flag",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "languages6",
-          "label": "Country 6 Languages (comma separated)",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "country7",
-          "label": "Country 7",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "flag7",
-          "label": "Country 7 Flag",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "languages7",
-          "label": "Country 7 Languages (comma separated)",
-          "valueType": "string"
-        }
-      ]
+      "fields": [],
+      "reorderable": true,
+      "repeatable": true
     }
   ],
-  "filters": []
+  "filters": [
+    {
+      "id": "language-selector",
+      "components": [
+        "language-country"
+      ]
+    }
+  ]
 }

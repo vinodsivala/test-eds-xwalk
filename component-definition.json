@@ -189,6 +189,21 @@
           }
         },
         {
+          "title": "Language Country",
+          "id": "language-country",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Language Country",
+                  "model": "language-country"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Language Selector",
           "id": "language-selector",
           "plugins": {
@@ -198,29 +213,7 @@
                 "template": {
                   "name": "Language Selector",
                   "model": "language-selector",
-                  "defaultFlag": "🇺🇸",
-                  "defaultLanguage": "EN-US",
-                  "country1": "United States",
-                  "flag1": "🇺🇸",
-                  "languages1": "EN-US, ES-US",
-                  "country2": "Canada",
-                  "flag2": "🇨🇦",
-                  "languages2": "EN-CA, FR-CA",
-                  "country3": "Switzerland",
-                  "flag3": "🇨🇭",
-                  "languages3": "DE-CH, FR-CH, IT-CH",
-                  "country4": "Germany",
-                  "flag4": "🇩🇪",
-                  "languages4": "DE-DE",
-                  "country5": "France",
-                  "flag5": "🇫🇷",
-                  "languages5": "FR-FR",
-                  "country6": "Spain",
-                  "flag6": "🇪🇸",
-                  "languages6": "ES-ES",
-                  "country7": "Italy",
-                  "flag7": "🇮🇹",
-                  "languages7": "IT-IT"
+                  "filter": "language-selector"
                 }
               }
             }

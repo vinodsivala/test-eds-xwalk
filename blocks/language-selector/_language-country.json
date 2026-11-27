@@ -1,0 +1,52 @@
+
+{
+  "definitions": [
+    {
+      "title": "Language Country",
+      "id": "language-country",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Language Country",
+              "model": "language-country"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "language-country",
+      "fields": [
+        {
+          "component": "text",
+          "name": "countryName",
+          "label": "Country Name",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "countryFlag",
+          "label": "Country Flag",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "countryCode",
+          "label": "Country Code",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "languages",
+          "label": "Language Codes (comma separated)",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

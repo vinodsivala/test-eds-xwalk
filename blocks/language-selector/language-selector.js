@@ -1,9 +1,6 @@
-
 export default function decorate(block) {
   // Read authored fields from Universal Editor
-  const fields = [...block.children].map((field) =>
-    field.textContent.trim(),
-  );
+  const fields = [...block.children].map((field) => field.textContent.trim());
 
   if (fields.length < 23) {
     console.warn('Language Selector: Missing authored fields.');
