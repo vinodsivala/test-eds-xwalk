@@ -146,7 +146,7 @@
 }
 
 /* Mobile responsive */
-@media (max-width: 768px) {
+@media (width >= 768px) {
   .language-dropdown {
     width: 350px;
     max-width: 90vw;

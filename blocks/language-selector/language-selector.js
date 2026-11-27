@@ -3,7 +3,6 @@ export default function decorate(block) {
   const fields = [...block.children].map((field) => field.textContent.trim());
 
   if (fields.length < 23) {
-    console.warn('Language Selector: Missing authored fields.');
     return;
   }
 
